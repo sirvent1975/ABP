@@ -1,0 +1,19 @@
+{
+  "name": "biological-passport-contract",
+  "version": "1.0.0",
+  "description": "Smart contract for managing the biological passport with Hyperledger Fabric",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --timeout 10000"
+  },
+  "dependencies": {
+    "fabric-contract-api": "^2.2.0",
+    "fabric-shim": "^2.2.0"
+  },
+  "devDependencies": {
+    "mocha": "^8.4.0",
+    "chai": "^4.3.4"
+  },
+  "author": "Author Name",
+  "license": "Apache-2.0"
+}
