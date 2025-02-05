@@ -7,7 +7,7 @@ El objetivo principal de este proyecto es proporcionar una solución descentrali
 ## Estructura del Proyecto
 El proyecto se organiza de la siguiente manera:
 
-fabric-pasaporte-biologico/
+```console fabric-pasaporte-biologico/
 ├── chaincode/
 │   └── pasaporte-biologico/
 │       └── pasaporte.go           # El código del chaincode
@@ -18,7 +18,7 @@ fabric-pasaporte-biologico/
 │   ├── deploy.sh                  # Script para desplegar el chaincode
 │   ├── invoke.sh                  # Script para invocar funciones del chaincode
 │   └── query.sh                   # Script para consultar los datos de un atleta
-└── README.txt                     # Este archivo
+└── README.txt                     # Este archivo```
 
 ## Requisitos
 Docker: Hyperledger Fabric utiliza contenedores Docker para simular la red blockchain. Asegúrate de tener Docker y Docker Compose instalados.
@@ -34,19 +34,19 @@ Go: El código de chaincode está escrito en Go. Asegúrate de tener Go instalad
 	* Si es necesario, ajusta las configuraciones según tu entorno (puertos, imagen de la red, etc.).
 ### Paso 2: Iniciar la Red de Hyperledger Fabric
 	* Para iniciar la red de Hyperledger Fabric, ejecuta el siguiente comando desde la raíz del proyecto:
-	```docker-compose -f config/docker-compose.yaml up -d```
+	```console docker-compose -f config/docker-compose.yaml up -d```
 	* Este comando iniciará los contenedores de Docker necesarios para ejecutar la red.
 ### Paso 3: Desplegar el Chaincode
 	* Asegúrate de que los contenedores estén en ejecución.
 	* Ejecuta el script de despliegue:
-	```./scripts/deploy.sh```
+	```console ./scripts/deploy.sh```
 ### Paso 4: Registrar un Atleta
 	* Para registrar un atleta en la red, puedes ejecutar el script de invocación:
-	```./scripts/invoke.sh```
+	```console ./scripts/invoke.sh```
 	* Este script registrará al atleta "Juan Perez" con los datos proporcionados (identidad biométrica y resultados de dopaje).
 ### Paso 5: Consultar los Datos de un Atleta
 	* Para consultar los datos de un atleta registrado, puedes ejecutar el siguiente script:
-	```./scripts/query.sh```
+	```console ./scripts/query.sh```
 	* Este script consultará y mostrará los datos de un atleta registrado, como "Juan Perez".
 
 ## Contribuciones
