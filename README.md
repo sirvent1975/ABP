@@ -23,6 +23,7 @@ El proyecto se organiza de la siguiente manera:
 
 ## Requisitos
 Docker: Hyperledger Fabric utiliza contenedores Docker para simular la red blockchain. Asegúrate de tener Docker y Docker Compose instalados.
+---------------------------------------------------------------------------------------------------------------------------------------------
 	* Instalar Docker
 	* Instalar Docker Compose
 Go: El código de chaincode está escrito en Go. Asegúrate de tener Go instalado en tu máquina para poder modificar el código si es necesario.
