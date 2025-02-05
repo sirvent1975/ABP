@@ -1,10 +1,10 @@
-#Pasaporte Biológico para Atletas con Hyperledger Fabric
+# Pasaporte Biológico para Atletas con Hyperledger Fabric
 Este proyecto implementa un sistema de Pasaporte Biológico para atletas utilizando Hyperledger Fabric. El sistema usa blockchain para almacenar y gestionar la información biológica y de dopaje de los atletas, asegurando transparencia, integridad y seguridad en los datos.
 
-Descripción
+## Descripción
 El objetivo principal de este proyecto es proporcionar una solución descentralizada para el almacenamiento y gestión de datos sensibles relacionados con la salud y el rendimiento de los atletas. Utilizando Hyperledger Fabric, se asegura que la información de cada atleta sea inmutable, accesible y verificable solo por los actores autorizados, como agencias antidopaje, comités olímpicos, federaciones deportivas y otros stakeholders.
 
-Estructura del Proyecto
+## Estructura del Proyecto
 El proyecto se organiza de la siguiente manera:
 
 fabric-pasaporte-biologico/
