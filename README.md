@@ -21,14 +21,12 @@ fabric-pasaporte-biologico/
 │   └── query.sh                   # Script para consultar los datos de un atleta
 └── README.txt                     # Este archivo
 ```
-	```console 
- 	docker-compose -f config/docker-compose.yaml up -d
-	 ```
+
 ## Requisitos
-Docker: Hyperledger Fabric utiliza contenedores Docker para simular la red blockchain. Asegúrate de tener Docker y Docker Compose instalados.
+### Docker: Hyperledger Fabric utiliza contenedores Docker para simular la red blockchain. Asegúrate de tener Docker y Docker Compose instalados.
 	1. Instalar Docker
 	2. Instalar Docker Compose
-Go: El código de chaincode está escrito en Go. Asegúrate de tener Go instalado en tu máquina para poder modificar el código si es necesario.
+### Go: El código de chaincode está escrito en Go. Asegúrate de tener Go instalado en tu máquina para poder modificar el código si es necesario.
 	1. Instalar Go
 
 ## Instrucciones de Configuración
