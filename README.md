@@ -18,7 +18,8 @@ El proyecto se organiza de la siguiente manera:
 │   ├── deploy.sh                  # Script para desplegar el chaincode
 │   ├── invoke.sh                  # Script para invocar funciones del chaincode
 │   └── query.sh                   # Script para consultar los datos de un atleta
-└── README.txt                     # Este archivo```
+└── README.txt                     # Este archivo
+```
 
 ## Requisitos
 Docker: Hyperledger Fabric utiliza contenedores Docker para simular la red blockchain. Asegúrate de tener Docker y Docker Compose instalados.
