@@ -36,7 +36,7 @@ fabric-pasaporte-biologico/
 	- Si es necesario, ajusta las configuraciones según tu entorno (puertos, imagen de la red, etc.).
 ### Paso 2: Iniciar la Red de Hyperledger Fabric
 	1. Para iniciar la red de Hyperledger Fabric, ejecuta el siguiente comando desde la raíz del proyecto:
-	>docker-compose -f config/docker-compose.yaml up -d	
+	> docker-compose -f config/docker-compose.yaml up -d
 	2. Este comando iniciará los contenedores de Docker necesarios para ejecutar la red.
 ### Paso 3: Desplegar el Chaincode
 	1. Asegúrate de que los contenedores estén en ejecución.
