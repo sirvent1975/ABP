@@ -7,7 +7,8 @@ El objetivo principal de este proyecto es proporcionar una solución descentrali
 ## Estructura del Proyecto
 El proyecto se organiza de la siguiente manera:
 
-```console fabric-pasaporte-biologico/
+```console
+fabric-pasaporte-biologico/
 ├── chaincode/
 │   └── pasaporte-biologico/
 │       └── pasaporte.go           # El código del chaincode
@@ -23,7 +24,6 @@ El proyecto se organiza de la siguiente manera:
 
 ## Requisitos
 Docker: Hyperledger Fabric utiliza contenedores Docker para simular la red blockchain. Asegúrate de tener Docker y Docker Compose instalados.
----------------------------------------------------------------------------------------------------------------------------------------------
 	* Instalar Docker
 	* Instalar Docker Compose
 Go: El código de chaincode está escrito en Go. Asegúrate de tener Go instalado en tu máquina para poder modificar el código si es necesario.
@@ -36,14 +36,16 @@ Go: El código de chaincode está escrito en Go. Asegúrate de tener Go instalad
 	* Si es necesario, ajusta las configuraciones según tu entorno (puertos, imagen de la red, etc.).
 ### Paso 2: Iniciar la Red de Hyperledger Fabric
 	* Para iniciar la red de Hyperledger Fabric, ejecuta el siguiente comando desde la raíz del proyecto:
-	```console docker-compose -f config/docker-compose.yaml up -d
- ```
+	```console 
+ 	docker-compose -f config/docker-compose.yaml up -d
+	 ```
 	* Este comando iniciará los contenedores de Docker necesarios para ejecutar la red.
 ### Paso 3: Desplegar el Chaincode
 	* Asegúrate de que los contenedores estén en ejecución.
 	* Ejecuta el script de despliegue:
-	```console ./scripts/deploy.sh
- ```
+	```console
+ 	./scripts/deploy.sh
+	 ```
 ### Paso 4: Registrar un Atleta
 	* Para registrar un atleta en la red, puedes ejecutar el script de invocación:
 	```console ./scripts/invoke.sh
