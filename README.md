@@ -23,16 +23,16 @@ fabric-pasaporte-biologico/
 ```
 
 ## Requisitos
-### Docker: Hyperledger Fabric utiliza contenedores Docker para simular la red blockchain. Asegúrate de tener Docker y Docker Compose instalados.
+1. **Docker**: Hyperledger Fabric utiliza contenedores Docker para simular la red blockchain. Asegúrate de tener Docker y Docker Compose instalados.
 	1. Instalar Docker
 	2. Instalar Docker Compose
-### Go: El código de chaincode está escrito en Go. Asegúrate de tener Go instalado en tu máquina para poder modificar el código si es necesario.
+2. **Go**: El código de chaincode está escrito en Go. Asegúrate de tener Go instalado en tu máquina para poder modificar el código si es necesario.
 	1. Instalar Go
 
 ## Instrucciones de Configuración
 ### Paso 1: Configurar la Red de Hyperledger Fabric
 	1. Clona este repositorio o descarga el proyecto.
-	2. Ve a la carpeta config/ y abre el archivo docker-compose.yaml.
+	2. Ve a la carpeta *config/* y abre el archivo *docker-compose.yaml*.
 	3. Si es necesario, ajusta las configuraciones según tu entorno (puertos, imagen de la red, etc.).
 ### Paso 2: Iniciar la Red de Hyperledger Fabric
 	1. Para iniciar la red de Hyperledger Fabric, ejecuta el siguiente comando desde la raíz del proyecto:
