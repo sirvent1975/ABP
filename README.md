@@ -21,7 +21,9 @@ fabric-pasaporte-biologico/
 │   └── query.sh                   # Script para consultar los datos de un atleta
 └── README.txt                     # Este archivo
 ```
-
+	```console 
+ 	docker-compose -f config/docker-compose.yaml up -d
+	 ```
 ## Requisitos
 Docker: Hyperledger Fabric utiliza contenedores Docker para simular la red blockchain. Asegúrate de tener Docker y Docker Compose instalados.
 	1. Instalar Docker
@@ -41,21 +43,23 @@ Go: El código de chaincode está escrito en Go. Asegúrate de tener Go instalad
 	 ```
 	2. Este comando iniciará los contenedores de Docker necesarios para ejecutar la red.
 ### Paso 3: Desplegar el Chaincode
-	* Asegúrate de que los contenedores estén en ejecución.
-	* Ejecuta el script de despliegue:
+	1. Asegúrate de que los contenedores estén en ejecución.
+	2. Ejecuta el script de despliegue:
 	```console
  	./scripts/deploy.sh
 	 ```
 ### Paso 4: Registrar un Atleta
-	* Para registrar un atleta en la red, puedes ejecutar el script de invocación:
-	```console ./scripts/invoke.sh
-```
-	* Este script registrará al atleta "Juan Perez" con los datos proporcionados (identidad biométrica y resultados de dopaje).
+	1. Para registrar un atleta en la red, puedes ejecutar el script de invocación:
+	```console 
+ 	./scripts/invoke.sh
+  	```
+	2. Este script registrará al atleta "Juan Perez" con los datos proporcionados (identidad biométrica y resultados de dopaje).
 ### Paso 5: Consultar los Datos de un Atleta
-	* Para consultar los datos de un atleta registrado, puedes ejecutar el siguiente script:
-	```console ./scripts/query.sh
- ```
-	* Este script consultará y mostrará los datos de un atleta registrado, como "Juan Perez".
+	1. Para consultar los datos de un atleta registrado, puedes ejecutar el siguiente script:
+	```console
+ 	./scripts/query.sh
+ 	```
+	2. Este script consultará y mostrará los datos de un atleta registrado, como "Juan Perez".
 
 ## Contribuciones
 Si deseas contribuir a este proyecto, por favor abre un issue o crea un pull request con tus cambios. Asegúrate de seguir las buenas prácticas de desarrollo y pruebas para mantener la calidad del código.
